@@ -1,0 +1,33 @@
+.logo {
+    float: left;
+    padding-top: 3px;
+}
+
+.site-title {
+    visibility: hidden;
+  }
+
+.sidebar .site-title a {
+    font-size: 21pt;
+    color: black;
+}
+
+section code {
+    /* background-color: #f0f0f0; */
+    color: rgb(182, 118, 0);
+}
+
+@media (min-width: 48em) {
+ .site-title {
+    visibility: visible;
+  }
+  .sidebar {
+    width: 12rem;
+  }
+}
+
+@media (min-width: 58em) {
+  .logo {
+        padding-top: 12px; 
+  }
+}

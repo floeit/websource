@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Floe</title>
+    <link>http://www.floe.it/</link>
+    <description>Recent content on Floe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 14 May 2018 17:05:08 +0100</lastBuildDate>
+    
+	<atom:link href="http://www.floe.it/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Demo</title>
+      <link>http://www.floe.it/introduction/demo/</link>
+      <pubDate>Mon, 14 May 2018 17:05:08 +0100</pubDate>
+      
+      <guid>http://www.floe.it/introduction/demo/</guid>
+      <description>There is a demo server that checks out and builds the floe code&amp;hellip;
+DEMO (enter any username and password - it is not checked)</description>
+    </item>
+    
+    <item>
+      <title>Quick Start</title>
+      <link>http://www.floe.it/docs/quick-start/</link>
+      <pubDate>Mon, 14 May 2018 17:05:08 +0100</pubDate>
+      
+      <guid>http://www.floe.it/docs/quick-start/</guid>
+      <description>Download or build from scratch floe executable, add a local config.yml
+Start a host processes:
+floe -tags=linux,go,couch -admin=123456 -host_name=h1 -pub_bind=127.0.0.1:8080
+These commands default to reading in the local config.yml
+web Open a local browser to http://localhost:8080/app/dash</description>
+    </item>
+    
+    <item>
+      <title>Terminology</title>
+      <link>http://www.floe.it/docs/terminology/</link>
+      <pubDate>Mon, 14 May 2018 17:05:08 +0100</pubDate>
+      
+      <guid>http://www.floe.it/docs/terminology/</guid>
+      <description>Flows are coordinated by nodes issuing events to which other nodes listen.
+Host - Any named running floe service, it could be many such processes on single compute unit (vm, container), or one each.
+Flow - A description of a set of nodes linked by events. A specific instance of an flow is a Run
+Node - A config item that can respond to and issue events. A Node is part of a flow.</description>
+    </item>
+    
+    <item>
+      <title>Life Cycle</title>
+      <link>http://www.floe.it/docs/lifecycle/</link>
+      <pubDate>Mon, 14 May 2018 17:05:08 +0100</pubDate>
+      
+      <guid>http://www.floe.it/docs/lifecycle/</guid>
+      <description>When a trigger event arrives on the queue that matches a flow, the event reference will be considered &amp;lsquo;un-adopted&amp;rsquo; this means it has not got a full run reference. A pending run is created with a globally unique compound reference (now adopted) - this reference (and some other meta data) is added to the pending list of the host that adopted it as a &amp;lsquo;Pend&amp;rsquo; - this may not be the host that executes the run later.</description>
+    </item>
+    
+    <item>
+      <title>Config</title>
+      <link>http://www.floe.it/docs/config/</link>
+      <pubDate>Mon, 14 May 2018 17:05:08 +0100</pubDate>
+      
+      <guid>http://www.floe.it/docs/config/</guid>
+      <description>Common Config All config has a Common section which has the following top level config items:
+ hosts - []string - all other floe Hosts base-url - string - the api base url, in case hosting on a sub domain. config-path - string - is a path to the config which can be a path to a file in a git repo e.g. git@github.com:floeit/floe.git/build/FLOE.yaml store-type - string - define which type of store to use - memory, local, ec2 key-file - the private key to use with git.</description>
+    </item>
+    
+  </channel>
+</rss>

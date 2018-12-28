@@ -1,0 +1,15 @@
+baseurl = "http://www.floe.it/"
+languageCode = "en-gb"
+title = "Floe"
+subtitle = "Build Server (written in golang)"
+theme = "kraiklyn"
+pygmentsCodeFences = true
+pygmentsStyle = "monokailight"
+
+[params]
+customCss = ["css/floe.css"]
+
+[[menu.shortcuts]]
+name = "Floe on Github"
+url = "https://github.com/floeit/floe"
+weight = 120
